@@ -156,7 +156,7 @@ a {
 
 /* Start Hero */
 .hero {
-  padding: 140px 0 110px;
+  padding: var(--section-pad);
   background-color: var(--bg-body);
 }
 
