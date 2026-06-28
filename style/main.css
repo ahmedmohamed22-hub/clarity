@@ -14,12 +14,12 @@
   --shadow-sm: 0 4px 20px rgba(45, 30, 23, 0.06);
   --transition: 0.3s;
 }
-/* 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 html {
   scroll-behavior: smooth;
