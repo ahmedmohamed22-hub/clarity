@@ -9,17 +9,20 @@
   --text-dark: #2d1e17;
   --text-light: #ffffff;
   --bg-body: #fff9f5;
+  --bg-white: #ffffff;
+  --bg-soft: #f5ede6;
+  --section-pad: 110px 0;
   --radius: 16px;
   --radius-pill: 50px;
   --shadow-sm: 0 4px 20px rgba(45, 30, 23, 0.06);
   --transition: 0.3s;
 }
-
+/* 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -71,12 +74,13 @@ a {
   max-width: 650px;
 }
 .logo-icon {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background: var(--primary-light);
   border-radius: 10px;
   color: var(--primary);
   font-size: 1.1rem;
+  flex-shrink: 0;
   transition: transform var(--transition);
 }
 
@@ -84,13 +88,14 @@ a {
 
 /* Start Navbar */
 .navbar {
-  background: #ffffff;
+  background: var(--bg-white);
 }
 
 .navbar .logo-icon {
   width: 36px;
   height: 36px;
   background: var(--main-grad);
+  color: var(--text-light);
   border-radius: 8px;
 }
 
@@ -128,6 +133,7 @@ a {
   border-radius: 10px;
   color: var(--primary);
   font-size: 1.1rem;
+  flex-shrink: 0;
   transition: transform var(--transition);
 }
 
@@ -155,7 +161,8 @@ a {
 
 /* Start Hero */
 .hero {
-  padding: 120px 0 100px;
+  padding: 140px 0 110px;
+  background-color: var(--bg-body);
 }
 
 .hero-badge {
@@ -195,7 +202,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .hero .hero-img-wrapper {
-  background-color: #fff;
+  background-color: var(--bg-white);
 }
 .hero .hero-img-wrapper::after {
   content: '';
@@ -234,15 +241,15 @@ a {
 
 /* Start Services */
 .services {
-  padding: 100px 0;
-  background-color: #ffffff;
+  padding: var(--section-pad);
+  background-color: var(--bg-white);
 }
 
 .services .service-card {
   border: 1px solid #f2e9e4;
   border-radius: var(--radius);
   transition: all var(--transition);
-  background-color: #ffffff;
+  background-color: var(--bg-white);
 }
 .services .service-card h3 {
   background: var(--txt-grad);
@@ -289,13 +296,13 @@ a {
 
 /* Start Technologies */
 .tech {
-  padding: 100px 0;
+  padding: var(--section-pad);
   background-color: var(--bg-body);
 }
 
 .tech .tech-nav-btn {
   border: 1px solid #e2d7d0;
-  background-color: #ffffff;
+  background-color: var(--bg-white);
   color: var(--text-dark);
   font-weight: 600;
   padding: 8px 20px;
@@ -362,12 +369,12 @@ a {
 
 /* Start Testimonials */
 .testimonials {
-  padding: 100px 0;
-  background-color: var(--bg-body);
+  padding: var(--section-pad);
+  background-color: var(--bg-soft);
 }
 
 .testimonial-card {
-  background: #ffffff;
+  background: var(--bg-white);
   border-radius: 24px;
   box-shadow: var(--shadow-sm);
   border: 1px solid #f4eae4;
@@ -390,8 +397,8 @@ a {
 
 /* Start FAQ */
 .faq {
-  padding: 100px 0;
-  background-color: #ffffff;
+  padding: var(--section-pad);
+  background-color: var(--bg-white);
 }
 
 .faq-accordion .accordion-item {
@@ -404,7 +411,7 @@ a {
 .faq-accordion .accordion-button {
   font-weight: 700;
   color: var(--text-dark);
-  background-color: #ffffff;
+  background-color: var(--bg-white);
   box-shadow: none;
   padding: 20px 24px;
 }
@@ -421,12 +428,12 @@ a {
 
 /* Start Contact  */
 .contact {
-  padding: 100px 0;
+  padding: var(--section-pad);
   background-color: var(--bg-body);
 }
 
 .contact-wrapper {
-  background: #ffffff;
+  background: var(--bg-white);
   border-radius: 24px;
   box-shadow: var(--shadow-sm);
   border: 1px solid #f2e8e2;
@@ -456,7 +463,7 @@ a {
 .form-select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 0.25rem rgba(217, 93, 38, 0.15);
-  background-color: #ffffff;
+  background-color: var(--bg-white);
 }
 
 .budget-btn {
@@ -480,7 +487,8 @@ a {
 
 /* Start Footer */
 footer {
-  background-color: #fff;
+  padding: 60px 0 40px;
+  background-color: var(--bg-white);
   color: #7a6b63;
   border-top: 1px solid #eee5df;
 }
@@ -489,6 +497,7 @@ footer .logo-icon {
   background: var(--main-grad);
   color: var(--text-light);
 }
+
 footer .footer-title {
   color: var(--text-dark);
   font-weight: 700;
@@ -507,7 +516,7 @@ footer a:hover {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--bg-white);
   border: 1px solid #e5dbd5;
   color: var(--text-dark);
   display: inline-flex;
